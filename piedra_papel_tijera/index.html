@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Piedra, papel o tijera</h1>
+    <div class="game-field">
+        <div class="player-buttons player1">
+            <button id="player1_rock" onclick="opcionPlayer1(1)"><i class="fas fa-hand-rock"></i></button>
+            <button id="player1_paper" onclick="opcionPlayer1(2)"><i class="fas fa-hand-paper"></i></button>
+            <button id="player1_scissors" onclick="opcionPlayer1(3)"><i class="fas fa-hand-scissors"></i></button>
+            <div id="lockerPlayer1" class="lock">
+                <i class="fas fa-lock"></i>
+                <p>Botones bloqueados</p>
+            </div>
+        </div>
+        <div class="center">
+            <button id="gameButton" class="game-button">Empezar el juego</button>
+            <div class="elections">
+                <div class="player-election" id="player1-election">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <p>VS</p>
+                <div class="player-election" id="player2-election">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <p id="game_result" class="game-result">...</p>
+        </div>
+        <div class="player-buttons player2">
+            <button id="player2_rock" onclick="opcionPlayer2(1)"><i class="fas fa-hand-rock"></i></button>
+            <button id="player2_paper" onclick="opcionPlayer2(2)"><i class="fas fa-hand-paper"></i></button>
+            <button id="player2_scissors" onclick="opcionPlayer2(3)"><i class="fas fa-hand-scissors"></i></button>
+            <div id="lockerPlayer2" class="lock">
+                <i class="fas fa-lock"></i>
+                <p>Botones bloqueados</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
