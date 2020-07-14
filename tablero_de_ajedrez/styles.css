@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E7EAED;
+}
+
+h1, p {
+    margin-bottom: 1em;
+}
+
+.tablero {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 2px;
+    width: 480px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.casilla:nth-child(16n - 1),
+.casilla:nth-child(16n - 3),
+.casilla:nth-child(16n - 5),
+.casilla:nth-child(16n - 7),
+.casilla:nth-child(16n - 8),
+.casilla:nth-child(16n - 10),
+.casilla:nth-child(16n - 12),
+.casilla:nth-child(16n - 14) {
+    background-color: black;
+}
